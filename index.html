@@ -3,23 +3,58 @@
 
 <head>
   <meta charset="utf-8">
-  <title>CS208 - Starter Code (UPDATE ME)!</title>
-  <meta name="description" content="">
+  <title>Starting Lineup</title>
+  <meta name="description" content="A form to keep track of you line up for football">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>HTML Rocks!!</h1>
-  <ul>
-  <li><a href="/hello">Click here to say hello</a></li>
-  <li><button id="hello-link">Click Me!</button></li>
-  <li><button id="joke-button">Dad Joke!</button></li>
-  <script src="script.js"></script>
-  </ul>
-  <img src="funny.png" alt="Funny Image" width="300" height="200">
+  <h1>Starting Lineup</h1>
+  <p>
+    <fieldset>
+      <legend>Status:</legend>
+      
+      <input type="radio" id="draft" name="status">
+      <label for="draft">Draft</label>
 
-  <h2 id="joke-display"></h2>
+      <input type="radio" id="final" name="status" checked>
+      <label for="final">Final</label>
+
+    </fieldset>
+  </p>
+  <p>
+    <label for="gameDay">Date: </label>
+    <select name="gameDate" id="gameDay">
+      <option value="march_20">March 20</option>
+      <option value="march_24">March 24</option>
+      <option value="april_2">April 2</option>
+      <option value="april_6">April 6</option>
+      <option value="april_13">April 13</option>
+    </select>
+  </p>
+  <p>
+    <fieldset>
+      <legend>Players:</legend>
+      
+      <input type="checkbox" id="aarav" name="player">
+      <label for="aarav">Aarav Agarwal</label>
+      <br>
+      <input type="checkbox" id="ava" name="player">
+      <label for="ava">Ava Johnson</label>
+      <br>
+      <input type="checkbox" id="julio" name="player">
+      <label for="julio">Julio Ortiz</label>
+      <br>
+      <input type="checkbox" id="liam" name="player">
+      <label for="liam">Liam Rubio</label>
+      <br>
+      <input type="checkbox" id="emma" name="player">
+      <label for="emma">Emma Witherspoon</label>
+
+    </fieldset>
+  </p>
+  <input type="submit" id="submit" value="Submit">
 </body>
 
 </html>
